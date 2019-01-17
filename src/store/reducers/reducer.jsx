@@ -1,4 +1,4 @@
-import { UPDATE } from "store/types/rank";
+
 
 const defaultState = {
     rankList: []
@@ -6,7 +6,7 @@ const defaultState = {
 const RankReducer = (state = defaultState, action) => {
     const { type, payload } = action;
     switch (type) {
-        case UPDATE:
+        case "UPDATE":
             return { ...state, rankList: payload }
         default:
             return state;
