@@ -4,10 +4,10 @@ const defaultState = {
     rankList: []
 }
 const RankReducer = (state = defaultState, action) => {
-    const { type, payload } = action;
+    const { type, layload } = action;
     switch (type) {
         case "UPDATE":
-            return { ...state, rankList: payload }
+            return { ...state, rankList: layload }
         default:
             return state;
     }
